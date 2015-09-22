@@ -1,0 +1,13 @@
+import DS from 'ember-data';
+
+var Plate = DS.Model.extend({
+  plateID: DS.attr('number'),
+  plateAnswer: DS.attr('string'),
+  plateIndicates: DS.attr()
+});
+
+Plate.reopenClass({
+  FIXTURES: [{"id":1,"plateID":1,"plateAnswer":12,"plateIndicates":{}},{"id":2,"plateID":2,"plateAnswer":8,"plateIndicates":{"red-green":[3,"nothing"]}},{"id":3,"plateID":3,"plateAnswer":6,"plateIndicates":{"red-green":[5,"nothing"]}},{"id":4,"plateID":4,"plateAnswer":29,"plateIndicates":{"red-green":[70,"nothing"]}},{"id":5,"plateID":5,"plateAnswer":57,"plateIndicates":{"red-green":[35,"nothing"]}},{"id":6,"plateID":6,"plateAnswer":5,"plateIndicates":{"red-green":[2,"nothing"]}},{"id":7,"plateID":7,"plateAnswer":3,"plateIndicates":{"red-green":[5,"nothing"]}},{"id":8,"plateID":8,"plateAnswer":15,"plateIndicates":{"red-green":[17,"nothing"]}},{"id":9,"plateID":9,"plateAnswer":74,"plateIndicates":{"red-green":[21,"nothing"]}},{"id":10,"plateID":10,"plateAnswer":2,"plateIndicates":{"red-green":["nothing","*"]}},{"id":11,"plateID":11,"plateAnswer":6,"plateIndicates":{"red-green":["nothing","*"]}},{"id":12,"plateID":12,"plateAnswer":97,"plateIndicates":{"red-green":["nothing","*"]}},{"id":13,"plateID":13,"plateAnswer":45,"plateIndicates":{"red-green":["nothing","*"]}},{"id":14,"plateID":14,"plateAnswer":5,"plateIndicates":{"red-green":["nothing","*"]}},{"id":15,"plateID":15,"plateAnswer":7,"plateIndicates":{"red-green":["nothing","*"]}},{"id":16,"plateID":16,"plateAnswer":16,"plateIndicates":{"red-green":["nothing","*"]}},{"id":17,"plateID":17,"plateAnswer":73,"plateIndicates":{"red-green":["nothing","*"]}},{"id":18,"plateID":18,"plateAnswer":"nothing","plateIndicates":{"red-green":[5]}},{"id":19,"plateID":19,"plateAnswer":"nothing","plateIndicates":{"red-green":[2]}},{"id":20,"plateID":20,"plateAnswer":"nothing","plateIndicates":{"red-green":[45]}},{"id":21,"plateID":21,"plateAnswer":"nothing","plateIndicates":{"red-green":[73]}},{"id":22,"plateID":22,"plateAnswer":26,"plateIndicates":{"protanopia or protanomaly":[6],"deuteranopia or deuteranomaly":[2]}},{"id":23,"plateID":23,"plateAnswer":42,"plateIndicates":{"protanopia or protanomaly":[2],"deuteranopia or deuteranomaly":[4]}},{"id":24,"plateID":24,"plateAnswer":35,"plateIndicates":{"protanopia or protanomaly":[5],"deuteranopia or deuteranomaly":[3]}},{"id":25,"plateID":25,"plateAnswer":96,"plateIndicates":{"protanopia or protanomaly":[6],"deuteranopia or deuteranomaly":[9]}}]
+});
+
+export default Plate;

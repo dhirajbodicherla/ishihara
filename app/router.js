@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('/', {path: 'index'});
+  this.route('quiz');
 });
 
 export default Router;
